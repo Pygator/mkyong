@@ -5,10 +5,10 @@
 	<display-name>Restful Web Application</display-name>
 
 	<!-- Auto scan rest service -->
-	<context-param>
+<!--	<context-param>
 		<param-name>resteasy.scan</param-name>
 		<param-value>true</param-value>
-	</context-param>
+	</context-param>-->
 	
 	<context-param>
 		<param-name>resteasy.servlet.mapping.prefix</param-name>
@@ -28,7 +28,7 @@
 	</servlet>
 	
 	
-	<!-- 
+	<!-- uncomment following for Alternative REST Service Registration-->
 	<context-param>
 		<param-name>resteasy.servlet.mapping.prefix</param-name>
 		<param-value>/rest</param-value>
@@ -44,7 +44,7 @@
             <param-value>com.mkyong.app.MessageApplication</param-value>
         </init-param>
     </servlet>
-    -->
+
      
 	<servlet-mapping>
 		<servlet-name>resteasy-servlet</servlet-name>
